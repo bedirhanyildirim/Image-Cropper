@@ -1,0 +1,103 @@
+.cropperCanvas {
+    margin: 0;
+    width: 500px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.prevCanvas {
+    display: none;
+}
+
+.corners {
+    z-index: 2;
+    width: 100px;
+    cursor: move;
+    height: 100px;
+    display: flex;
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    align-items: center;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    box-sizing: border-box;
+    justify-content: center;
+    border: 3px dashed #d25aa5;
+}
+
+.corner {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 3px solid #8048a2;
+    background-color: #d25aa5;
+}
+
+.corner.nw {
+    top: -7.5px;
+    left: -7.5px;
+    cursor: nw-resize;
+}
+
+.corner.ne {
+    top: -7.5px;
+    right: -7.5px;
+    cursor: ne-resize;
+}
+
+.corner.se {
+    bottom: -7.5px;
+    right: -7.5px;
+    cursor: se-resize;
+}
+
+.corner.sw {
+    bottom: -7.5px;
+    left: -7.5px;
+    cursor: sw-resize;
+}
+
+.center {
+    display: none;
+    padding: 0px;
+    border-radius: 50%;
+    border: 3px solid #8048a2;
+}
+
+#save {
+    border: none;
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    width: min-content;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px auto 0 auto;
+    background-color: #8048a2;
+    transition: background-color 300ms linear;
+}
+
+#save:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #d25aa5;
+}
+
+#save:active {
+    outline: none;
+    text-decoration: none;
+    background-color: #d25aa5;
+}
+
+#save:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: #d25aa5;
+}

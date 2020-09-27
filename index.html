@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cropper</title>
+    <link rel="stylesheet" href="./styles/cropper.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="uploadSection" class="uploadSection">
+            <div class="dropzone" id="dropzone">Drop the image that you want to edit</div>
+            <div id="preview">
+                <img src="#" alt="" id="previewimage" style="display: none;"/>
+            </div>
+            <div id="upload"></div>
+            <div id="gonext">
+                <button id="drawToCanvas">Next</button>
+            </div>
+            <input type="file" accept="image/*" id="fileinput" style="display: none;" name="fileinput"/>
+        </div>
+        <div id="canvasSection" class="canvasSection">
+            <div id="canvasArea">
+            </div>
+        </div>
+    </div>
+    <script src="./cropper.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

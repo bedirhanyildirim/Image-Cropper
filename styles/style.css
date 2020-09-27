@@ -1,0 +1,97 @@
+body {
+    width: 720px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 540px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: -webkit-fill-available;
+}
+
+.uploadSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropzone {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    color: #cccccc;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cccccc;
+    transition: all 300ms linear;
+}
+
+.dropzone.dragover {
+    color: #000000;
+    border-color: #000000;
+}
+
+#preview {
+    width: 500px;
+    height: auto;
+    display: flex;
+    background-color: red;
+}
+
+#previewimage {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#upload {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+#gonext {
+    display: none;
+    margin-top: 10px;
+}
+
+#gonext button {
+    margin: 0;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #8048a2;
+    transition: background-color 300ms linear;
+}
+
+#gonext button:hover {
+    cursor: pointer;
+    background-color: #d25aa5;
+}
+
+#gonext button:focus {
+    outline: none;
+    background-color: #d25aa5;
+}
+
+#canvasSection {
+    display: none;
+}
+
+#canvas {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    background-color: transparent;
+}
