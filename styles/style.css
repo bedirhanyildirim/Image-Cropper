@@ -33,6 +33,17 @@ body {
     transition: all 300ms linear;
 }
 
+.dropzone:hover {
+    cursor: pointer;
+    color: #000000;
+    border-color: #000000;
+}
+
+.dropzone:focus, .dropzone:active {
+    color: #000000;
+    border-color: #000000;
+}
+
 .dropzone.dragover {
     color: #000000;
     border-color: #000000;
