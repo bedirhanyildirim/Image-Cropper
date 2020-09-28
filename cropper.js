@@ -106,12 +106,14 @@ class Cropper {
         var elmnt = document.getElementById(this.corners.el.id)
         // Add event to cropper square
         elmnt.onmousedown = dragMouseDown
+        elmnt.ontouchstart = dragMouseDown
         
         // Find corner points of cropper square
         var cornersDom = document.querySelectorAll('.corner')
         // Add events to corner points of cropper square
         for (let corner of cornersDom) {
             corner.onmousedown = dragMouseDown
+            corner.ontouchstart = dragMouseDown
         }
 
         // Mouse down event
@@ -135,9 +137,12 @@ class Cropper {
 
             // Set when mouse up event
             document.onmouseup = closeDragElement
+            document.ontouchend = closeDragElement
+            document.ontouchend = closeDragElement
 
             // Set when mouse move event
             document.onmousemove = elementDrag
+            document.ontouchmove = elementDrag
         }
     
         // Mouse move event
@@ -239,6 +244,8 @@ class Cropper {
             // Set actions as null
             document.onmouseup = null
             document.onmousemove = null
+            document.ontouchcancel = null
+            document.ontouchend = null
         }
     }
 
